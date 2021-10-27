@@ -1,0 +1,21 @@
+{
+  "hello-world": "Olá mundo",
+  "home": {
+    "you-clicked": "Você clicou",
+    "times": "vezes",
+    "reset-counter": "Resetar contador",
+    "increment-counter": "Incrementar contador",
+    "your-name": "Seu nome",
+    "hello-me": "Olá eu",
+    "choose-your-language": "Escolha seu idioma",
+    "please-type-your-name-in-the-input-above": "Por favor digite o seu nome no campo acima"
+  },
+  "hello": {
+    "hello": "Olá",
+    "return-to-home": "Voltar para o ínicio"
+  },
+  "404": {
+    "page-not-found": "Página não encontrada",
+    "return-to-home": "Voltar para o ínicio"
+  }
+}

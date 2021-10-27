@@ -1,0 +1,21 @@
+{
+  "hello-world": "Hello World",
+  "home": {
+    "you-clicked": "You clicked",
+    "times": "times",
+    "reset-counter": "Reset Counter",
+    "increment-counter": "Increment Counter",
+    "your-name": "Your name",
+    "hello-me": "Hello me",
+    "choose-your-language": "Choose your language",
+    "please-type-your-name-in-the-input-above": "Please type your name in the input above"
+  },
+  "hello": {
+    "hello": "Hello",
+    "return-to-home": "Return to home"
+  },
+  "404": {
+    "page-not-found": "Page not found",
+    "return-to-home": "Return to home"
+  }
+}
