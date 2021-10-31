@@ -1,0 +1,7 @@
+body {
+  background: #fff;
+  color: #000;
+  &.fade-transition {
+    transition: background-color 0.3s;
+  }
+}

@@ -1,13 +1,13 @@
 <script setup lang="ts"></script>
 
 <template>
-  <nav>
+  <nav class="navbar">
     <h1>Vue template</h1>
   </nav>
 </template>
 
 <style lang="scss" scoped>
-nav {
+.navbar {
   width: 100%;
   height: 60px;
   display: flex;

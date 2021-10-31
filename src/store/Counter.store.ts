@@ -1,6 +1,6 @@
 import { defineStore } from "pinia";
 
-const CounterStore = defineStore("counter", {
+export const useCounterStore = defineStore("counter", {
   state() {
     return {
       count: Number(localStorage.getItem("count")) || 0,
@@ -21,5 +21,3 @@ const CounterStore = defineStore("counter", {
     },
   },
 });
-
-export { CounterStore };

@@ -1,0 +1,27 @@
+body[theme="dark"] {
+  background: #191a1b;
+  color: #fff;
+
+  input,
+  button,
+  select {
+    background: #252627;
+    border: 0;
+    color: #fff;
+  }
+  button {
+    transition: filter 0.3s;
+  }
+  button:hover {
+    filter: contrast(0.8);
+  }
+  .navbar {
+    background: #252627;
+    h1 {
+      color: #fff;
+    }
+  }
+  &.fade-transition {
+    transition: background-color 0.3s;
+  }
+}

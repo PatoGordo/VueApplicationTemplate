@@ -1,9 +1,9 @@
 import { createI18n } from "vue-i18n";
-import { userPreferences } from "@/shared/user-preferences";
 import messages from "@intlify/vite-plugin-vue-i18n/messages";
+import { getItemName as getPreferenceName } from "@/store/Preferences.store";
 
 const i18n = createI18n({
-  locale: userPreferences.lang,
+  locale: localStorage.getItem(getPreferenceName("lang")) || "en",
   messages,
   fallbackLocale: "en",
 });

@@ -1,19 +1,21 @@
 <script setup lang="ts">
 import { useI18n } from "vue-i18n";
-import { CounterStore } from "@/store/CounterStore";
+import { useCounterStore } from "@/store/Counter.store";
 import { useRouter } from "vue-router";
 import { Icon } from "@iconify/vue";
 import { ref, watch } from "vue";
-import { ChangeUserPreference } from "@/shared/user-preferences";
+import { usePreferencesStore } from "@/store/Preferences.store";
 
 const router = useRouter();
-const counterStore = CounterStore();
+const counterStore = useCounterStore();
+const userPreferences = usePreferencesStore();
+
 const { t, locale } = useI18n();
 
 const name = ref("");
 
 watch(locale, (val) => {
-  ChangeUserPreference.lang(val as "pt" | "en");
+  userPreferences.changeLangTo(val);
 });
 
 function handleSubmit() {
@@ -60,6 +62,16 @@ function handleSubmit() {
       <option value="en">English</option>
       <option value="pt">Português</option>
     </select>
+    <br />
+    <button
+      @click="
+        userPreferences.changeThemeTo(
+          userPreferences.theme === 'dark' ? 'light' : 'dark'
+        )
+      "
+    >
+      Change theme
+    </button>
   </div>
 </template>
 
