@@ -4,6 +4,7 @@ import voie from "vite-plugin-voie";
 import { VitePWA } from "vite-plugin-pwa";
 import vueI18n from "@intlify/vite-plugin-vue-i18n";
 import path from "path";
+import svgLoader from "vite-svg-loader";
 
 // https://vitejs.dev/config/
 export default defineConfig({
@@ -15,6 +16,12 @@ export default defineConfig({
   plugins: [
     vue(),
     voie(),
+    svgLoader({
+      svgo: true,
+      svgoConfig: {
+        multipass: true,
+      },
+    }),
     vueI18n({
       include: path.resolve(__dirname, "./src/i18n/messages/**"),
     }),

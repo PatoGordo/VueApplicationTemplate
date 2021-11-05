@@ -38,6 +38,7 @@
     "vite": "^2.6.4",
     "vite-plugin-pwa": "^0.11.3",
     "vite-plugin-voie": "^0.7.3",
+    "vite-svg-loader": "^3.1.0",
     "voie-pages": "^0.4.0",
     "vue-tsc": "^0.3.0"
   }
