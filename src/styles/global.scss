@@ -1,5 +1,6 @@
-@import "./themes/default.scss";
-@import "./themes/dark.scss";
+@use "./global.variables.scss";
+@use "./themes/default.scss";
+@use "./themes/dark.scss";
 
 * {
   margin: 0;

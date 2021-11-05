@@ -1,13 +1,14 @@
 body[theme="dark"] {
-  background: #191a1b;
-  color: #fff;
+  background: var(--theme_dark-background-primary);
+  color: var(--theme_dark-color);
 
   input,
   button,
   select {
-    background: #252627;
-    border: 0;
-    color: #fff;
+    background: var(--theme_dark-background-secondary);
+    border-color: var(--theme_dark-background-secondary);
+    border-style: solid;
+    color: var(--theme_dark-color);
   }
   button {
     transition: filter 0.3s;
@@ -16,11 +17,12 @@ body[theme="dark"] {
     filter: contrast(0.8);
   }
   .navbar {
-    background: #252627;
+    background: var(--theme_dark-navbar-background);
     h1 {
-      color: #fff;
+      color: var(--theme_dark-color);
     }
   }
+
   &.fade-transition {
     transition: background-color 0.3s;
   }
