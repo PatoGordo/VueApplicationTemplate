@@ -112,4 +112,4 @@ yarn && yarn build && yarn serve
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/f8a55213-b580-45d7-bb8f-f03fba43cb9c/deploy-status)](https://app.netlify.com/sites/vue-application-template/deploys)
 
-[![Vercel Status](https://shields.io/github/deployments/PatoGordo/VueApplicationTemplate/production?label=Vercel%20Deploy&labelColor=3F454B&color=51FF96)](https://no-horny.vercel.app)
+[![Vercel Status](https://shields.io/github/deployments/PatoGordo/VueApplicationTemplate/production?label=Vercel%20Deploy&labelColor=3F454B&color=51FF96)](https://vue-application-template.vercel.app)
